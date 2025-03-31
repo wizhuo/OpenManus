@@ -73,6 +73,7 @@ class MCPServer:
 
         # Register with server
         self.server.tool()(tool_method)
+        logger.info("=======注册mcp======")
         logger.info(f"Registered tool: {tool_name}")
 
     def _build_docstring(self, tool_function: dict) -> str:
@@ -177,4 +178,5 @@ if __name__ == "__main__":
 
     # Create and run server (maintaining original flow)
     server = MCPServer()
+    print("=======启动mcp======")
     server.run(transport=args.transport)

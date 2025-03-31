@@ -8,4 +8,5 @@ if __name__ == "__main__":
 
     # Create and run server (maintaining original flow)
     server = MCPServer()
+    print("=======启动mcp")
     server.run(transport=args.transport)

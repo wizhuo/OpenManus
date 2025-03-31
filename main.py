@@ -1,11 +1,12 @@
 import asyncio
 
 from app.agent.manus import Manus
+from app.agent.data_analysis_manus import DataAnalysisManus
 from app.logger import logger
 
 
 async def main():
-    agent = Manus()
+    agent = DataAnalysisManus()
     try:
         prompt = input("Enter your prompt: ")
         if not prompt.strip():

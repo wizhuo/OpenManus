@@ -4,11 +4,12 @@ import time
 from app.agent.manus import Manus
 from app.flow.flow_factory import FlowFactory, FlowType
 from app.logger import logger
+from app.agent.data_analysis_manus import DataAnalysisManus
 
 
 async def run_flow():
     agents = {
-        "manus": Manus(),
+        "manus": DataAnalysisManus(),
     }
 
     try:
