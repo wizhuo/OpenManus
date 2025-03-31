@@ -168,7 +168,6 @@ def get_data(shop_id: str, start_date: str, end_date: str):
             return []  # 返回空列表
 
         result = df.head().to_dict(orient="records")  # 转换为 JSON 格式
-        print(result)  # 打印前几行
         return result
 
     except Exception as e:

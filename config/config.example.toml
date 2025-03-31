@@ -5,7 +5,7 @@ model = "Qwen/Qwen2.5-7B-Instruct"        # The LLM model to use
 base_url = "https://api.siliconflow.cn/v1"  # API endpoint URL
 api_key = "sk-qcppsozbflfmgdepeidhhtbncncggpbgndjwaecvmoxhceec"                    # Your API key
 max_tokens = 4096                           # Maximum number of tokens in the response
-temperature = 0.5                           # Controls randomness
+temperature = 0.0                           # Controls randomness
 
 
 # model = "claude-3-7-sonnet-20250219"       # The LLM model to use
@@ -45,7 +45,7 @@ model = "Qwen/Qwen2.5-7B-Instruct"        # The vision model to use
 base_url = "https://api.siliconflow.cn/v1"  # API endpoint URL for vision model
 api_key = "sk-qcppsozbflfmgdepeidhhtbncncggpbgndjwaecvmoxhceec"                    # Your API key for vision model
 max_tokens = 4096                           # Maximum number of tokens in the response
-temperature = 0.5                           # Controls randomness for vision model
+temperature = 0.0                           # Controls randomness for vision model
 
 
 # model = "claude-3-7-sonnet-20250219"       # The vision model to use
